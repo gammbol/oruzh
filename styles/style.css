@@ -37,7 +37,7 @@ body {
 
 .headerHeading {
     font-family: "Molot", sans-serif;
-    font-size: 110px;
+    font-size: 6rem;
     line-height: 130px;
     letter-spacing: 2px;
 }
@@ -126,8 +126,14 @@ body {
 }
 
 .pContainer {
-    width: 322px;
     margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutP {
+    max-width: 322px;
+    font-size: 1rem;
 }
 
 .aboutP:not(:last-child) {
@@ -151,7 +157,7 @@ body {
 }
 
 .priceHeading {
-    font-size: 22px;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 .priceTicket {
