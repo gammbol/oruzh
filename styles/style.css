@@ -19,7 +19,8 @@ body {
 }
 
 .contentContainer {
-    max-width: 1300px;
+    max-width: 1366px;
+    padding: 0 25px;
     width: 100%;
     height: 162px;
     margin: 0 auto;
@@ -67,8 +68,9 @@ body {
 }
 
 .heroContentContainer {
-    max-width: 1300px;
+    max-width: 1366px;
     width: 100%;
+    padding: 0 25px;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -106,8 +108,9 @@ body {
 }
 
 .aboutContainer {
-    max-width: 1300px;
+    max-width: 1366px;
     width: 100%;
+    padding: 0 25px;
     margin: 0 auto;
 
     background: url("../images/aboutBg.png") no-repeat right;
@@ -123,7 +126,7 @@ body {
 }
 
 .pContainer {
-    max-width: 322px;
+    width: 322px;
     margin-top: 42px;
 }
 
