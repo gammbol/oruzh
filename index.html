@@ -12,7 +12,7 @@
             <div class="headerContainer">
                 <h1 class="headerHeading">ОРУЖЕЙНЫЙ ПОДВАЛ</h1>
                 <ul class="headerMenuList">
-                    <li class="headerMenuItem"><a href="#">О МУЗЕЕ</a></li>
+                    <li class="headerMenuItem"><a href="#about">О МУЗЕЕ</a></li>
                     <li class="headerMenuItem"><a href="#">ЭКСПОНАТЫ</a></li>
                     <li class="headerMenuItem"><a href="#">ДЛЯ ГРУПП</a></li>
                     <li class="headerMenuItem"><a href="#">СЕРТИФИКАТЫ</a></li>
@@ -40,7 +40,7 @@
             <h2 class="heroHeading">КОНТАКТНЫЙ<br>МУЗЕЙ ОРУЖИЯ<br>НА НИКОЛЬСКОЙ</h2>
         </div>
     </main>
-    <section class="about">
+    <section id="about" class="about">
         <div class="aboutContainer">
             <h1 class="aboutHeading">О МУЗЕЕ</h1>
             <div class="timetable">
@@ -85,5 +85,35 @@
             </div>
         </div>
     </section>
+    <section id="exp">
+        <div class="expContainer">
+            <h1 class="expHeading">ЭКСПОНАТЫ</h1>
+            <div class="expAbout">
+                <p class="expP">В настоящий момент коллекция музея насчитывает около 50
+                    образцов огнестрельного оружия с 30-х годов прошлого века до
+                    сегодняшнего дня. В музее можно примерить военную форму, увидеть
+                    приборы связи и многое другое.
+                </p>
+                <p class="expP">
+                    Мы стараемся регулярно пополнять коллецию.<br>
+                    За обновлениями удобнее всего следить в соцсетях.
+                </p>
+            </div>
+            <div class="expCarousel">
+                <div class="arrows">
+                    <button class="btns btnPrev"></button>
+                </div>
+                <div class="expImgWrapper">
+                    <img src="./images/carousel1.png" alt="" class="expImg">
+                    <img src="./images/logo.png" alt="" class="expImg">
+                    <img src="./images/carousel1.png" alt="" class="expImg">
+                </div>
+                <div class="arrows">
+                    <button class="btns btnNext"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./scripts/carousel.js"></script>
 </body>
 </html>
