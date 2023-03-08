@@ -100,3 +100,58 @@ body {
     text-align: right;
     font-weight: 400;
 }
+
+.about {
+    padding-top: 27px;
+}
+
+.aboutContainer {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+
+    background: url("../images/aboutBg.png") no-repeat right;
+}
+
+.aboutHeading {
+    font-family: "Molot", sans-serif;
+    font-size: 115px;
+}
+
+.timetable {
+    margin-top: 43px;
+}
+
+.pContainer {
+    max-width: 322px;
+    margin-top: 42px;
+}
+
+.aboutP:not(:last-child) {
+    margin-bottom: 22px;
+}
+
+.aboutPrice {
+    width: 100%;
+    background: #FF2200;
+    margin-top: 77px;
+}
+
+.priceContainer {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: right;
+    gap: 156px;
+    padding-right: 85px;
+}
+
+.priceHeading {
+    font-size: 22px;
+    font-weight: 600;
+}
+.priceTicket {
+    font-size: 22px;
+    font-weight: 600;
+}
