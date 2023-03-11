@@ -6,7 +6,7 @@
 
 @media screen and (max-width: 768px) {
     .header, .header * {
-        background: transparent !important; 
+        background: transparent !important;
     }
     .contentContainer {
         justify-content: space-between !important;
@@ -166,7 +166,6 @@ body {
     width: 33px;
     height: 40px;
     margin-top: 16px;
-    background: url('/images/mobileMenu.png') no-repeat center;
 }
 
 .headerLogoWrapper {
