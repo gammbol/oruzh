@@ -98,6 +98,9 @@
     .priceWrapper {
         align-self: flex-end;
     }
+    #exp {
+        padding-top: 18px !important;
+    }
     .expHeading {
         text-align: left !important;
         font-size: 54px !important;
