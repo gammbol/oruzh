@@ -19,7 +19,6 @@
     }
     .headerMobileWrapper {
         display: block !important;
-        position: relative;
     }
     .headerHeading {
         font-size: 48px !important;
@@ -33,13 +32,14 @@
         padding-top: 18px !important;
     }
     .headerContainer {
+        width: 90% !important;
         z-index: 4;
         flex-shrink: 1;
     }
     .hero:before {
         height: 100% !important;
         width: 250% !important;
-        transform: rotate(-74deg);
+        transform: rotate(-74deg) !important;
         left: -70% !important;
     }
     .heroContentContainer {
