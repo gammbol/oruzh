@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оружейный подвал</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.min.css"
+    />
 </head>
 <body>
-    <header class="header">
+    <main class="hero">
         <div class="contentContainer">
             <div class="headerContainer">
                 <h1 class="headerHeading">ОРУЖЕЙНЫЙ ПОДВАЛ</h1>
@@ -19,12 +23,11 @@
                     <li class="headerMenuItem"><a href="#">КОНТАКТЫ</a></li>
                 </ul>
             </div>
+            <div class="headerMobileWrapper"></div>
             <div class="headerLogoWrapper">
                 <img src="./images/logo.png" alt="Логотип" class="headerLogo">
             </div>
         </div>
-    </header>
-    <main class="hero">
         <div class="heroContentContainer">
             <div class="heroSocials">
                 <a href="#">
@@ -37,7 +40,10 @@
                     <img src="./images/vkontakte.png" alt="Vkontakte">
                 </a>
             </div>
-            <h2 class="heroHeading">КОНТАКТНЫЙ<br>МУЗЕЙ ОРУЖИЯ<br>НА НИКОЛЬСКОЙ</h2>
+            <div class="heroHeadingContainer">
+                <h2 class="heroHeading">КОНТАКТНЫЙ МУЗЕЙ ОРУЖИЯ НА НИКОЛЬСКОЙ</h2>
+                <img src="./images/logo.png" alt="Logo" class="heroHeadingImg">
+            </div>
         </div>
     </main>
     <section id="about" class="about">
@@ -74,13 +80,17 @@
             <div class="priceContainer">
                 <div class="priceItem">
                     <h2 class="priceHeading">ПО БУДНЯМ:</h2>
-                    <p class="priceTicket">ПОЛНЫЙ БИЛЕТ - 800Р</p>
-                    <p class="priceTicket">ЛЬГОТНЫЙ БИЛЕТ - 400Р</p>
+                    <div class="priceWrapper">
+                        <p class="priceTicket">ПОЛНЫЙ БИЛЕТ - 800Р</p>
+                        <p class="priceTicket">ЛЬГОТНЫЙ БИЛЕТ - 400Р</p>
+                    </div>
                 </div>
                 <div class="priceItem">
                     <h2 class="priceHeading">ПО ВЫХОДНЫМ:</h2>
-                    <p class="priceTicket">ПОЛНЫЙ БИЛЕТ - 1000Р</p>
-                    <p class="priceTicket">ЛЬГОТНЫЙ БИЛЕТ - 500Р</p>
+                    <div class="priceWrapper">
+                        <p class="priceTicket">ПОЛНЫЙ БИЛЕТ - 1000Р</p>
+                        <p class="priceTicket">ЛЬГОТНЫЙ БИЛЕТ - 500Р</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -99,21 +109,28 @@
                     За обновлениями удобнее всего следить в соцсетях.
                 </p>
             </div>
-            <div class="expCarousel">
-                <div class="arrows">
-                    <button class="btns btnPrev"></button>
+            <div class="carouselContainer">
+                <div class="btns">
+                    <img src="./images/arrow-left.png" alt="arrow left" class="btn-prev">
                 </div>
-                <div class="expImgWrapper">
-                    <img src="./images/carousel1.png" alt="" class="expImg">
-                    <img src="./images/logo.png" alt="" class="expImg">
-                    <img src="./images/carousel1.png" alt="" class="expImg">
+                <div id="my-keen-slider" class="keen-slider">
+                    <div class="keen-slider__slide">
+                        <img src="./images/carousel1.png" alt="">
+                    </div>
+                    <div class="keen-slider__slide">
+                        <img src="./images/carousel1.png" alt="">
+                    </div>
+                    <div class="keen-slider__slide">
+                        <img src="./images/carousel1.png" alt="">
+                    </div>
                 </div>
-                <div class="arrows">
-                    <button class="btns btnNext"></button>
+                <div class="btns">
+                    <img src="./images/arrow-right.png" alt="arrow right" class="btn-next">
                 </div>
             </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.js"></script>
     <script src="./scripts/carousel.js"></script>
 </body>
 </html>
