@@ -127,7 +127,6 @@ body {
 
 .contentContainer {
     max-width: 1366px;
-    position: relative;
     padding: 0 25px;
     width: 100%;
     height: 162px;
@@ -186,7 +185,7 @@ body {
     justify-content: space-between;
 }
 
-.contentContainer:before {
+.hero:before {
     content: '';
     width: 100%;
     height: 100%;
