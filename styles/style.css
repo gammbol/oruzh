@@ -132,9 +132,12 @@
         color: #fff !important;
         font-size: 16px !important;
     }
+    .rus {
+        padding-top: 80px !important;
+    }
     .rusHeadingWrapper {
         max-width: 360px !important;
-        height: 28px !important; 
+        height: 28px !important;
     }
     .rusHeading {
         font-size: 34px !important;
@@ -152,6 +155,9 @@
         font-size: 16px !important;
         background: transparent !important;
         color: #fff !important;
+    }
+    .for {
+        padding-top: 80px !important;
     }
     .forHeadingWrapper {
         max-width: 360px !important;
@@ -452,7 +458,7 @@ body {
     max-height: 660px;
     list-style: none;
     margin-top: 40px;
-    background: url('/images/sovBg.png') right top  no-repeat;
+    background: url('/images/sovBg.png') right top no-repeat;
 }
 
 .sovItem {
@@ -494,7 +500,7 @@ body {
 .rusListWrapper {
     height: 660px;
     margin-top: 40px;
-    background: url('/images/rusBg.png')  left no-repeat;
+    background: url('/images/rusBg.png') left no-repeat;
 }
 
 .rusList {
