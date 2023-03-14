@@ -458,7 +458,7 @@ body {
     max-height: 660px;
     list-style: none;
     margin-top: 40px;
-    background: url("../images/sovBg.png") right top no-repeat;
+    background: url("../images/heroBg.png") no-repeat center;
 }
 
 .sovItem {
@@ -557,7 +557,7 @@ body {
     height: 800px;
     display: flex;
     gap: 100px;
-    background-image: url("/images/forBg.png");
+    background: url("/images/forBg.png") right center no-repeat;
 }
 
 .forList {
