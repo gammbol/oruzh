@@ -113,6 +113,67 @@
     .btns {
         display: none !important;
     }
+    .sovHeadingWrapper {
+        max-width: 360px !important;
+        height: 28px !important;
+        margin-left: auto;
+    }
+    .sovHeading {
+        font-size: 34px !important;
+        text-align: center;
+        top: -20px !important;
+        left: 0 !important;
+    }
+    .sovList {
+        padding: 20px !important;
+    }
+    .sovItem {
+        background: transparent !important;
+        color: #fff !important;
+        font-size: 16px !important;
+    }
+    .rusHeadingWrapper {
+        max-width: 360px !important;
+        height: 28px !important;
+    }
+    .rusHeading {
+        font-size: 34px !important;
+        text-align: center !important;
+        top: -20px !important;
+        left: 0 !important;
+    }
+    .rusList {
+        padding-right: 0 !important;
+        padding-left: 20px !important;
+        align-content: flex-start !important;
+        max-height: 300px !important;
+    }
+    .rusItem {
+        font-size: 16px !important;
+        background: transparent !important;
+        color: #fff !important;
+    }
+    .forHeadingWrapper {
+        max-width: 360px !important;
+        height: 28px !important;
+        margin-left: auto;
+    }
+    .forHeading {
+        font-size: 34px !important;
+        text-align: center !important;
+        top: -20px !important;
+        left: 0 !important;
+    }
+    .forList {
+        padding-right: 0 !important;
+        padding-left: 29px !important;
+        align-content: center !important;
+    }
+    .forItem {
+        font-size: 16px !important;
+        background: transparent !important;
+        color: #fff !important;
+    }
 }
 
 * {
@@ -430,7 +491,15 @@ body {
     left: 15px;
 }
 
+.rusListWrapper {
+    height: 660px;
+    margin-top: 40px;
+    background: url('/images/rusBg.png')  left no-repeat;
+}
+
 .rusList {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -438,11 +507,8 @@ body {
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 20px;
-    max-height: 660px;
     list-style: none;
-    margin-top: 40px;
     padding: 0 371px 0 0;
-    background: url('/images/rusBg.png')  left no-repeat;
 }
 
 .rusItem {
