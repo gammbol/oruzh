@@ -458,7 +458,7 @@ body {
     max-height: 660px;
     list-style: none;
     margin-top: 40px;
-    background: url('/images/sovBg.png') right top no-repeat;
+    background: url(/images/sovBg.png) right top no-repeat;
 }
 
 .sovItem {
@@ -500,7 +500,7 @@ body {
 .rusListWrapper {
     height: 660px;
     margin-top: 40px;
-    background: url('/images/rusBg.png') left no-repeat;
+    background: url(/images/rusBg.png) left no-repeat;
 }
 
 .rusList {
@@ -557,7 +557,7 @@ body {
     height: 800px;
     display: flex;
     gap: 100px;
-    background: url('/images/forBg.png') right center no-repeat;
+    background: url(/images/forBg.png) right center no-repeat;
 }
 
 .forList {
