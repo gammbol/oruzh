@@ -557,7 +557,7 @@ body {
     height: 800px;
     display: flex;
     gap: 100px;
-    background: url("/images/forBg.png") right center no-repeat;
+    background: url("../images/forBg.png") right center no-repeat;
 }
 
 .forList {
