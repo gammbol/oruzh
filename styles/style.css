@@ -24,7 +24,7 @@
         display: block !important;
     }
     .headerHeading {
-        font-size: 48px !important;
+        font-size: 36px !important;
         width: 100% !important;
         flex-shrink: 1;
     }
@@ -130,6 +130,8 @@
     }
     .sovList {
         padding-top: 20px !important;
+        align-items: center !important;
+        padding-left: 0 !important;
     }
     .sovItem {
         background: transparent !important;
@@ -140,7 +142,7 @@
         padding-top: 80px !important;
     }
     .rusHeadingWrapper {
-        width: 360px !important;
+        max-width: 360px !important;
         height: 28px !important;
     }
     .rusHeading {
@@ -164,7 +166,7 @@
         padding-top: 80px !important;
     }
     .forHeadingWrapper {
-        width: 360px !important;
+        max-width: 360px !important;
         height: 28px !important;
         margin-left: auto;
     }
@@ -176,12 +178,13 @@
     }
     .forListsContainer {
         background-position-y: 200px !important;
-        background-position-x: right;
         background-size: 300px 280px !important;
+        justify-content: center !important;
+        gap: 57px !important;
     }
     .forList {
         padding-right: 0 !important;
-        padding-left: 29px !important;
+        padding-left: 0 !important;
         align-content: center !important;
     }
     .forItem {
@@ -331,7 +334,7 @@ body {
 }
 
 .heroContentContainer {
-    /*padding: 0 25px;*/
+    padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -430,7 +433,7 @@ body {
     font-weight: 600;
 }
 
-#exp {
+.exp {
     padding-top: 102px;
 }
 
@@ -466,6 +469,7 @@ body {
 }
 
 .carouselContainer {
+    margin-top: -50px;
     display: flex;
     justify-content: center;
     padding: 0 15px;
@@ -616,4 +620,3 @@ body {
     font-size: 24px;
     font-weight: 500;
 }
-
