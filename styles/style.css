@@ -197,12 +197,22 @@ body {
     color: #fff;
 }
 
-.contentContainer {
+.container {
     max-width: 1366px;
-    padding: 0 25px;
-    width: 100%;
-    height: 162px;
     margin: 0 auto;
+}
+
+.p-0-25 {
+    padding: 0 25px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.contentContainer {
+    /*padding: 0 25px;*/
+    height: 162px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,10 +279,7 @@ body {
 }
 
 .heroContentContainer {
-    max-width: 1366px;
-    width: 100%;
-    padding: 0 25px;
-    margin: 0 auto;
+    /*padding: 0 25px;*/
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -322,10 +329,9 @@ body {
 }
 
 .aboutContainer {
-    max-width: 1366px;
-    width: 100%;
-    padding: 0 25px;
-    margin: 0 auto;
+    /*max-width: 1366px;*/
+    /*padding: 0 25px;*/
+    /*margin: 0 auto;*/
 
     background: url("../images/aboutBg.png") no-repeat right;
 }
@@ -355,15 +361,12 @@ body {
 }
 
 .aboutPrice {
-    width: 100%;
+    /*width: 100%;*/
     background: #FF2200;
     margin-top: 77px;
 }
 
 .priceContainer {
-    max-width: 1300px;
-    width: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: right;
     gap: 10%;
@@ -384,8 +387,6 @@ body {
 }
 
 .expContainer {
-    max-width: 1366px;
-    margin: 0 auto;
     position: relative;
     padding: 0 8px;
 }
@@ -416,12 +417,6 @@ body {
     width: 100%;
 }
 
-.carouselContainer {
-    display: flex;
-    justify-content: center;
-    padding: 0 15px;
-}
-
 .btns {
     display: flex;
     flex-direction: column;
@@ -433,11 +428,6 @@ body {
     padding-top: 248px;
 }
 
-.sovContainer {
-    max-width: 1366px;
-    margin: 0 auto;
-}
-
 .sovHeadingWrapper {
     max-width: 824px;
     height: 68px;
@@ -445,7 +435,6 @@ body {
 }
 
 .sovHeading {
-    width: 100%;
     font-family: "Molot", sans-serif;
     font-size: 70px;
 
@@ -480,11 +469,6 @@ body {
     padding-top: 248px;
 }
 
-.rusContainer {
-    max-width: 1366px;
-    margin: 0 auto;
-}
-
 .rusHeadingWrapper {
     max-width: 878px;
     height: 68px;
@@ -493,7 +477,6 @@ body {
 }
 
 .rusHeading {
-    width: 100%;
     font-family: "Molot", sans-serif;
     font-size: 70px;
 
@@ -536,11 +519,6 @@ body {
     padding-top: 248px;
 }
 
-.forContainer {
-    max-width: 1366px;
-    margin: 0 auto;
-}
-
 .forHeadingWrapper {
     max-width: 824px;
     height: 68px;
@@ -548,7 +526,6 @@ body {
 }
 
 .forHeading {
-    width: 100%;
     font-family: "Molot", sans-serif;
     font-size: 70px;
 
@@ -558,7 +535,6 @@ body {
 }
 
 .forListsContainer {
-    width: 100%;
     height: 600px;
     display: flex;
     gap: 100px;
