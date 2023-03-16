@@ -38,10 +38,11 @@
         width: 90% !important;
     }
     .hero:before {
-        height: 100% !important;
-        width: 250% !important;
-        transform: rotate(-74deg) !important;
-        left: -70% !important;
+        /*height: 100% !important;*/
+        /*width: 250% !important;*/
+        /*transform: rotate(-74deg) !important;*/
+        /*left: -70% !important;*/
+        background: url("/images/mobileHeroBg.png") !important;
     }
     .heroContentContainer {
         justify-content: center !important;
