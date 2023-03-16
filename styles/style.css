@@ -618,3 +618,60 @@ body {
     font-size: 24px;
     font-weight: 500;
 }
+
+.group {
+}
+
+.groupContainer {
+    background-image: url("../images/groupBg.png"), linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    padding: 0 20px;
+}
+
+.groupHeading {
+    font-size: 115px;
+    font-family: "Molot", sans-serif;
+    padding-left: 20px;
+}
+
+.groupContentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+.groupContent {
+    text-align: right;
+    max-width: 437px;
+}
+
+.groupTable {
+    margin-top: 69px;
+    border-collapse: collapse;
+    border: 1px solid #fff;
+}
+
+.groupTable thead {
+    height: 42px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.groupTable td {
+    height: 82px;
+}
+
+.groupTable > thead > tr > th {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.groupTable > tbody > tr > td {
+    text-align: center;
+    padding: 0 25px;
+    border: 1px solid #fff;
+    border-top: none;
+}
+
+.groupPrice {
+    font-size: 28px;
+}
