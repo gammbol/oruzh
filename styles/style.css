@@ -261,6 +261,31 @@
         align-items: flex-end;
         text-align: right !important;
     }
+    .groupTour {
+        margin-top: 40px;
+        flex-direction: column-reverse !important;
+    }
+    .groupOrder {
+        flex-wrap: wrap;
+        gap: 13px !important;
+    }
+    .orderRow {
+        justify-content: center !important;
+        gap: 30px !important;
+    }
+    .orderItem {
+        padding: 5px 2px !important;
+    }
+    .orderSubmit {
+        padding: 5px 2px !important;
+        flex-basis: 185px !important;
+    }
+    .orderItem:first-of-type {
+        flex-basis: 154px !important;
+    }
+    .orderItem:last-of-type {
+        flex-basis: 185px !important;
+    }
 }
 
 * {
@@ -690,10 +715,16 @@ body {
     font-weight: 500;
 }
 
+.groupTour {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
 .groupContainer {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),
     linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url("../images/groupBg.png");
-    background-position: center;
+    background-position: 0 -80px;
     background-repeat: no-repeat;
     padding: 0 20px;
 }
@@ -750,4 +781,65 @@ body {
 
 .xl-none {
     display: none;
+}
+
+.groupOrderContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.groupOrder {
+    display: flex;
+    justify-content: center;
+    gap: 43px;
+}
+
+.orderRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 43px;
+}
+
+.orderRow:first-of-type {
+    flex-basis: 739px;
+}
+
+.orderRow:last-of-type {
+    gap: 36px;
+    flex-basis: 464px;
+}
+
+.orderItem {
+    padding: 14px 0 14px 11px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+}
+
+.orderHeading {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+
+.orderName {
+    flex-basis: 208px;
+}
+
+.orderEvent {
+    flex-basis: 488px;
+}
+
+.orderTelephone {
+    flex-basis: 201px;
+}
+
+.orderSubmit {
+    flex-basis: 227px;
+    padding: 14px 0;
+    border-radius: 10px;
+    background: #FF2200;
+    color: #fff;
+    border: none;
 }
