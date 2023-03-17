@@ -177,7 +177,7 @@
     .forListsContainer {
         background-position-y: 200px !important;
         background-size: 300px 280px !important;
-        justify-content: center !important;
+        padding-left: 20px;
         gap: 57px !important;
     }
     .forList {
