@@ -22,10 +22,10 @@
             <a href="#exp">ЭКСПОНАТЫ</a>
         </div>
         <div class="mobileMenuItem w-full">
-            <a href="#">ДЛЯ ГРУПП</a>
+            <a href="#group">ДЛЯ ГРУПП</a>
         </div>
         <div class="mobileMenuItem w-full">
-            <a href="#">СЕРТИФИКАТЫ</a>
+            <a href="#certificates">СЕРТИФИКАТЫ</a>
         </div>
         <div class="mobileMenuItem w-full">
             <a href="#">КОНТАКТЫ</a>
@@ -41,8 +41,8 @@
                 <ul class="headerMenuList">
                     <li class="headerMenuItem"><a href="#about">О МУЗЕЕ</a></li>
                     <li class="headerMenuItem"><a href="#exp">ЭКСПОНАТЫ</a></li>
-                    <li class="headerMenuItem"><a href="#">ДЛЯ ГРУПП</a></li>
-                    <li class="headerMenuItem"><a href="#">СЕРТИФИКАТЫ</a></li>
+                    <li class="headerMenuItem"><a href="#group">ДЛЯ ГРУПП</a></li>
+                    <li class="headerMenuItem"><a href="#certificates">СЕРТИФИКАТЫ</a></li>
                     <li class="headerMenuItem"><a href="#">КОНТАКТЫ</a></li>
                 </ul>
             </div>
@@ -241,7 +241,7 @@
     </section>
     <section class="group">
         <div class="groupContainer container">
-            <h1 class="groupHeading">ДЛЯ ГРУПП</h1>
+            <h1 id="group" class="groupHeading">ДЛЯ ГРУПП</h1>
             <div class="groupContentContainer">
                 <p class="groupContent">
                     В наш музей можно прийти с большой компанией. Или
@@ -327,15 +327,35 @@
                     <h1 class="orderHeading">ЗАКАЗ ЭКСКУРСИИ</h1>
                     <form action="#" class="groupOrder">
                         <div class="orderRow">
-                            <input class="orderName orderItem" type="text" placeholder="Имя">
-                            <input class="orderEvent orderItem" type="text" placeholder="Тип мероприятия">
+                            <input class="orderName orderItem" type="text" placeholder="Имя" name="name">
+                            <input class="orderEvent orderItem" type="text" placeholder="Тип мероприятия" name="eventType">
                         </div>
                         <div class="orderRow">
-                            <input class="orderTelephone orderItem" type="text" placeholder="Номер телефона">
+                            <input class="orderTelephone orderItem" type="text" placeholder="Номер телефона" name="tel">
                             <input class="orderSubmit" type="submit" value="ОТПРАВИТЬ">
                         </div>
                     </form>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="certificates">
+        <div class="certificatesContainer container">
+            <h1 id="certificates" class="certificatesHeading">СЕРТИФИКАТЫ</h1>
+            <div class="certificatesContentContainer">
+                <p class="certificatesContent">
+                    Для приобретения подарочного сертификата заполните
+                    форму - мы свяжемся с Вами в ближайшее время,
+                    выберем удобный способ оплаты и вышлем его в
+                    электронном виде.
+                </p>
+                <form action="#" class="certificatesForm">
+                    <input type="text" name="name" placeholder="Имя">
+                    <input type="text" name="name" placeholder="Номер телефона">
+                    <input type="text" name="name" placeholder="Почта">
+                    <textarea name="message" cols="80" rows="8" placeholder="Сообщение"></textarea>
+                    <input class="certificatesSubmit" type="submit" value="ОТПРАВИТЬ">
+                </form>
             </div>
         </div>
     </section>
