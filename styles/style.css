@@ -42,7 +42,7 @@
         /*width: 250% !important;*/
         /*transform: rotate(-74deg) !important;*/
         /*left: -70% !important;*/
-        background: url("/images/mobileHeroBg.png") !important;
+        background: url("/images/mobileHeroBg.png") no-repeat center !important;
     }
     .heroContentContainer {
         justify-content: center !important;
@@ -189,6 +189,75 @@
         font-size: 16px !important;
         background: transparent !important;
         color: #fff !important;
+    }
+    .groupHeading {
+        font-size: 54px !important;
+        text-align: right !important;
+        margin-bottom: 24px;
+    }
+    .groupContentContainer {
+        align-items: flex-start !important;
+    }
+    .groupContent {
+        text-align: left !important;
+    }
+    table, tbody, tr, td {
+        border: none !important;
+    }
+    tbody {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .groupTable thead {
+        display: none;
+    }
+    .groupTable tbody tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .groupTable tbody td:first-of-type {
+        width: 100%;
+        margin: 5px 25px;
+        background: rgba(255, 255, 255, 0.26);
+        border-radius: 10px;
+    }
+    .tableMobileContent {
+        box-sizing: content-box !important;
+        text-align: left !important;
+        padding: 0 !important;
+        max-width: 190px;
+        font-size: 14px !important;
+        font-weight: 300 !important;
+    }
+    .tableMobilePrice {
+        max-width: 103px !important;
+        box-sizing: content-box !important;
+        font-size: 14px !important;
+        font-weight: 300 !important;
+        padding: 0 !important;
+    }
+    .tablePrice {
+        font-size: 18px !important;
+    }
+    .v-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tableMobileHeading {
+        background: gray;
+        margin-bottom: 25px !important;
+    }
+    .md-none {
+        display: none;
+    }
+    .md-flex {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
     }
 }
 
@@ -619,11 +688,11 @@ body {
     font-weight: 500;
 }
 
-.group {
-}
-
 .groupContainer {
-    background-image: url("../images/groupBg.png"), linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background-image: url("../images/groupBg.png"), linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 0 20px;
 }
 
@@ -672,6 +741,11 @@ body {
     border-top: none;
 }
 
-.groupPrice {
+.tablePrice {
+    font-weight: 500;
     font-size: 28px;
+}
+
+.xl-none {
+    display: none;
 }
