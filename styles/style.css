@@ -239,6 +239,7 @@
         padding: 0 !important;
     }
     .tablePrice {
+        font-weight: 500 !important;
         font-size: 18px !important;
     }
     .v-center {
@@ -258,6 +259,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
+        text-align: right !important;
     }
 }
 
@@ -689,8 +691,8 @@ body {
 }
 
 .groupContainer {
-    background-image: url("../images/groupBg.png"), linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
-    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),
+    linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url("../images/groupBg.png");
     background-position: center;
     background-repeat: no-repeat;
     padding: 0 20px;
@@ -742,7 +744,7 @@ body {
 }
 
 .tablePrice {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 28px;
 }
 
