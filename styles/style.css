@@ -42,7 +42,7 @@
         /*width: 250% !important;*/
         /*transform: rotate(-74deg) !important;*/
         /*left: -70% !important;*/
-        background: url("/images/mobileHeroBg.png") no-repeat 0 0 !important;
+        background: url("/images/mobileHeroBg.png") no-repeat center !important;
     }
     .heroContentContainer {
         justify-content: center !important;
