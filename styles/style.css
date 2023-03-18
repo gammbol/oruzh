@@ -215,6 +215,9 @@
     .groupTable thead {
         display: none;
     }
+    .groupTable td {
+        height: auto !important;
+    }
     .groupTable tbody tr {
         display: flex;
         flex-wrap: wrap;
@@ -225,6 +228,7 @@
         margin: 5px 25px;
         background: rgba(255, 255, 255, 0.26);
         border-radius: 10px;
+        padding: 8px 0 !important;
     }
     .tableMobileContent {
         box-sizing: content-box !important;
@@ -247,12 +251,23 @@
     }
     .v-center {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .tableMobileHeading {
         background: gray;
         margin-bottom: 25px !important;
+        font-size: 24px !important;
+    }
+    .tableMobileMd {
+        font-size: 20px !important;
+    }
+    .tableMobileSm {
+        font-size: 16px !important;
+    }
+    .tableMobileXS {
+        font-size: 14px !important;
     }
     .md-none {
         display: none;
@@ -273,21 +288,23 @@
         gap: 13px !important;
     }
     .orderRow {
+        flex-basis: 370px !important;
         justify-content: center !important;
         gap: 30px !important;
     }
-    .orderItem {
-        padding: 5px 2px !important;
-    }
-    .orderSubmit {
-        padding: 5px 2px !important;
-        flex-basis: 185px !important;
-    }
-    .orderItem:first-of-type {
+    .orderItemWrapper:first-of-type {
         flex-basis: 154px !important;
     }
-    .orderItem:last-of-type {
+    .orderItemWrapper:last-of-type {
         flex-basis: 185px !important;
+    }
+    .orderItem {
+        padding: 6px 0 6px 7px !important;
+        width: 100%;
+    }
+    .orderSubmit {
+        padding: 6px 0 !important;
+        width: 100%;
     }
     .certificates {
         height: 618px !important;

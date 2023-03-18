@@ -278,14 +278,16 @@
                             <td class="v-center tableMobilePrice"><span class="tablePrice">10 000 р.</span></td>
                         </tr>
                         <tr>
-                            <td class="v-center tableMobileHeading">Стандартная экскурсия в утренние часы (между 10:00 и 12:00)</td>
+                            <td class="v-center tableMobileHeading">Стандартная экскурсия <span class="tableMobileXS">в утренние часы (между 10:00 и 12:00)</span></td>
                             <td class="v-center tableMobileContent">Не более 10 человек; продолжительность до 1 часа</td>
                             <td class="v-center tableMobilePrice"><span class="tablePrice">8 000 р.</span></td>
                         </tr>
                         <tr>
                             <td class="v-center tableMobileHeading">
-                                Квест для маленькой школьной группы (по будням до 12:00,
-                                либо по выходным до 11:00)
+                                Квест для маленькой школьной группы
+                                <span class="tableMobileXS">
+                                    (по будням до 12:00, либо по выходным до 11:00)
+                                </span>
                             </td>
                             <td class="v-center tableMobileContent">
                                 Не более 15 человек, 9-17 лет, продолжительность до 1 часа,
@@ -296,7 +298,9 @@
                         <tr>
                             <td class="v-center tableMobileHeading">
                                 Квест для большой школьной группы
-                                (по будням до 12:00, либо по выходным до 11:00)
+                                <span class="tableMobileXS">
+                                    (по будням до 12:00, либо по выходным до 11:00)
+                                </span>
                             </td>
                             <td class="v-center tableMobileContent">
                                 Не более 25 человек, 9-17 лет, продолжительность
@@ -305,7 +309,7 @@
                             <td class="v-center tableMobilePrice"><span class="tablePrice">15 000 р.</span></td>
                         </tr>
                         <tr>
-                            <td class="v-center tableMobileHeading">
+                            <td class="v-center tableMobileHeading tableMobileSm">
                                 Посещение музея для школьных групп с утренней скидкой,
                                 без экскурсии (в любой день до 12:00)
                             </td>
@@ -328,12 +332,20 @@
                     <h1 class="orderHeading">ЗАКАЗ ЭКСКУРСИИ</h1>
                     <form action="#" class="groupOrder">
                         <div class="orderRow">
-                            <input class="orderName orderItem" type="text" placeholder="Имя" name="name">
-                            <input class="orderEvent orderItem" type="text" placeholder="Тип мероприятия" name="eventType">
+                            <div class="orderItemWrapper">
+                                <input class="orderName orderItem" type="text" placeholder="Имя" name="name">
+                            </div>
+                            <div class="orderItemWrapper">
+                                <input class="orderEvent orderItem" type="text" placeholder="Тип мероприятия" name="eventType">
+                            </div>
                         </div>
                         <div class="orderRow">
-                            <input class="orderTelephone orderItem" type="text" placeholder="Номер телефона" name="tel">
-                            <input class="orderSubmit" type="submit" value="ОТПРАВИТЬ">
+                            <div class="orderItemWrapper">
+                                <input class="orderTelephone orderItem" type="text" placeholder="Номер телефона" name="tel">
+                            </div>
+                            <div class="orderItemWrapper">
+                                <input class="orderSubmit" type="submit" value="ОТПРАВИТЬ">
+                            </div>
                         </div>
                     </form>
                 </div>
