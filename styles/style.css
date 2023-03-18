@@ -44,7 +44,7 @@
         /*left: -70% !important;*/
         position: relative;
         z-index: 4;
-        background: url("/images/mobileHeroBg.png") no-repeat center !important;
+        background: url("/images/mobileHeroBg.png") center !important;
     }
     .heroContentContainer {
         justify-content: center !important;
