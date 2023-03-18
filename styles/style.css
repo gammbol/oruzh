@@ -37,11 +37,13 @@
     .headerContainer {
         width: 90% !important;
     }
-    .hero:before {
+    .hero:after {
         /*height: 100% !important;*/
         /*width: 250% !important;*/
         /*transform: rotate(-74deg) !important;*/
         /*left: -70% !important;*/
+        position: relative;
+        z-index: 4;
         background: url("/images/mobileHeroBg.png") no-repeat center !important;
     }
     .heroContentContainer {
@@ -501,7 +503,7 @@ body {
     justify-content: space-between;
 }
 
-.hero:before {
+.hero:after {
     content: '';
     width: 100%;
     height: 100%;
