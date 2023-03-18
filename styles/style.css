@@ -497,7 +497,6 @@ body {
     padding-top: 30px;
     padding-bottom: 71px;
     position: relative;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
