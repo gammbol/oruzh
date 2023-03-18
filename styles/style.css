@@ -1,11 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap');
 @import "./keen-slider.css";
 
 @font-face {
     font-family: "Molot";
-    src: url("../fonts/Molot.otf") format("opentype");
+    src: url("../fonts/molot.woff") format("woff");
 }
-
+@font-face {
+  font-family: "Jost";
+  font-weight: 300;
+  src: url("../fonts/jost-300-light.woff") format("woff");
+}
+@font-face {
+  font-family: "Jost";
+  font-weight: 400;
+  src: url("../fonts/jost-400-book.woff") format("woff");
+}
+@font-face {
+  font-family: "Jost";
+  font-weight: 500;
+  src: url("../fonts/jost-500-medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Jost";
+  font-weight: 600;
+  src: url("../fonts/jost-600-semi.woff") format("woff");
+}
 
 @media screen and (max-width: 768px) {
     .mobileMenuContainer {
