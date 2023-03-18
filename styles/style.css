@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap');
+@import "./keen-slider.css";
+
 @font-face {
     font-family: "Molot";
     src: url("../fonts/Molot.otf") format("opentype");
 }
+
 
 @media screen and (max-width: 768px) {
     .mobileMenuContainer {
@@ -44,7 +47,7 @@
         /*left: -70% !important;*/
         position: relative;
         z-index: 4;
-        background: url("../images/mobileHeroBg.png") no-repeat center !important; 
+        background: url("../images/mobileHeroBg.png") no-repeat center !important;
     }
     .heroContentContainer {
         justify-content: center !important;
