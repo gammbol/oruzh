@@ -894,6 +894,7 @@ body {
 }
 
 .orderItem {
+    width: 100%;
     padding: 14px 0 14px 11px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.8);
@@ -918,8 +919,12 @@ body {
     flex-basis: 201px;
 }
 
-.orderSubmit {
+.orderSubmitWrapper {
     flex-basis: 227px;
+}
+
+.orderSubmit {
+    width: 100%;
     padding: 14px 0;
     border-radius: 10px;
     background: #FF2200;
