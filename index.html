@@ -5,71 +5,125 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Оружейный подвал</title>
   <link rel="icon" href="./images/mobileLogo.png" type="image/icon type">
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./dist/styles.min.css">
 </head>
 <body>
-<div class="">
-  <main>
-    <header class="mobileMenuContainer w-full">
-      <div class="logoWrapper mobileMenuItem w-full">
-        <img src="./images/mobileLogo.png" alt="menu logo">
-      </div>
-      <div class="mobileMenuItem w-full">
-        <a href="#about">О МУЗЕЕ</a>
-      </div>
-      <div class="mobileMenuItem w-full">
-        <a href="#exp">ЭКСПОНАТЫ</a>
-      </div>
-      <div class="mobileMenuItem w-full">
-        <a href="#group">ДЛЯ ГРУПП</a>
-      </div>
-      <div class="mobileMenuItem w-full">
-        <a href="#certificates">СЕРТИФИКАТЫ</a>
-      </div>
-      <div class="mobileMenuItem w-full">
-        <a href="#contacts">КОНТАКТЫ</a>
-      </div>
-      <button class="closeWrapper w-full">
-        <img src="./images/mobileClose.png" alt="close button">
-      </button>
-    </header>
-    <section class="hero">
-      <div class="contentContainer container p-0-25">
-        <div class="headerContainer">
-          <h1 class="headerHeading">ОРУЖЕЙНЫЙ ПОДВАЛ</h1>
-          <ul class="headerMenuList">
-            <li class="headerMenuItem"><a href="#about">О МУЗЕЕ</a></li>
-            <li class="headerMenuItem"><a href="#exp">ЭКСПОНАТЫ</a></li>
-            <li class="headerMenuItem"><a href="#group">ДЛЯ ГРУПП</a></li>
-            <li class="headerMenuItem"><a href="#certificates">СЕРТИФИКАТЫ</a></li>
-            <li class="headerMenuItem"><a href="#contacts">КОНТАКТЫ</a></li>
-          </ul>
+<div class="flex flex-col min-h-screen overflow-hidden">
+  <header class="flex flex-col h-screen container py-5 xl:pt-10 xxl:pt-15 xl2k:pt-20">
+    <div class="relative lg:pr-35">
+      <div class="flex lg:grid lg:max-w-[97%]">
+        <div class="grow flex items-center h-fit">
+          <svg class="hidden lg:block w-full h-full lg:max-h-[90px] xl:max-h-[130px]">
+            <use xlink:href="./images/sprites/sprite.svg#logo-text-desktop"></use>
+          </svg>
+          <svg class="block lg:hidden w-full h-full max-w-[400px] aspect-[328/104] ">
+            <use xlink:href="./images/sprites/sprite.svg#logo-text-mobile"></use>
+          </svg>
         </div>
-        <div class="headerMobileWrapper">
-          <img src="./images/mobileMenu.svg" alt="mobile menu">
+        <div class="block lg:hidden grow-0 pt-2 sm:pt-4">
+          <button class="p-2 -mr-2 js-header-open" type="button">
+            <svg class="w-8 h-8 md:w-10 md:h-10">
+              <use xlink:href="./images/sprites/sprite.svg#menu"></use>
+            </svg>
+          </button>
         </div>
-        <div class="headerLogoWrapper">
-          <img src="./images/logo.png" alt="Логотип" class="headerLogo">
-        </div>
+        <nav
+          class="fixed lg:static top-0 inset-x-0 z-50 flex flex-col lg:block lg:md:mt-2 xl:mt-0.5 bg-white lg:bg-transparent shadow lg:shadow-none -translate-y-full lg:transform-none transition-transform transform-gpu duration-300 js-header-nav">
+          <ol class="grid lg:flex lg:justify-between divide-y divide-black border-t border-black">
+            <li class="py-1 lg:py-0 text-xl lg:text-[22px] leading-9 lg:leading-8">
+              <a class="block text-center text-black lg:text-white hover:text-opacity-80 transition-colors"
+                 href="#about">О МУЗЕЕ</a>
+            </li>
+            <li class="py-1 lg:py-0 text-xl lg:text-[22px] leading-9 lg:leading-8">
+              <a class="block text-center text-black lg:text-white hover:text-opacity-80 transition-colors" href="#exp">ЭКСПОНАТЫ</a>
+            </li>
+            <li class="py-1 lg:py-0 text-xl lg:text-[22px] leading-9 lg:leading-8">
+              <a class="block text-center text-black lg:text-white hover:text-opacity-80 transition-colors"
+                 href="#group">ДЛЯ ГРУПП</a>
+            </li>
+            <li class="py-1 lg:py-0 text-xl lg:text-[22px] leading-9 lg:leading-8">
+              <a class="block text-center text-black lg:text-white hover:text-opacity-80 transition-colors"
+                 href="#certificates">СЕРТИФИКАТЫ</a>
+            </li>
+            <li class="py-1 lg:py-0 text-xl lg:text-[22px] leading-9 lg:leading-8">
+              <a class="block text-center text-black lg:text-white hover:text-opacity-80 transition-colors"
+                 href="#contacts">КОНТАКТЫ</a>
+            </li>
+          </ol>
+          <div
+            class="flex order-first lg:absolute top-0 right-0 bottom-8 items-center justify-center py-3 lg:py-0 text-black lg:text-inherit">
+            <svg class="block w-30 h-15 -mt-0.5">
+              <use xlink:href="./images/sprites/sprite.svg#logo"></use>
+            </svg>
+          </div>
+          <div class="flex justify-center lg:hidden py-5 border-t border-black">
+            <button class="js-header-close" type="button">
+              <svg class="w-10 h-10">
+                <use xlink:href="./images/sprites/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </div>
+        </nav>
       </div>
-      <div class="heroContentContainer w-full container">
-        <div class="heroSocials">
-          <a href="#">
-            <img src="./images/telegram.png" alt="Telegram">
-          </a>
-          <a href="#">
-            <img src="./images/instagram.png" alt="Instagram">
-          </a>
-          <a href="#">
-            <img src="./images/vkontakte.png" alt="Vkontakte">
-          </a>
-        </div>
-        <div class="heroHeadingContainer">
-          <h2 class="heroHeading">КОНТАКТНЫЙ МУЗЕЙ ОРУЖИЯ НА НИКОЛЬСКОЙ</h2>
-          <img src="./images/logo.png" alt="Logo" class="heroHeadingImg">
-        </div>
+    </div>
+
+    <div class="grow py-10">
+      <div class="relative w-full h-full">
+        <picture>
+          <source type="images/webp" srcset="images/hero-cta.webp">
+          <source type="images/jpeg" srcset="images/hero-cta.jpg">
+          <img
+            class="absolute inset-0 -z-1 block w-full h-[max(100%,40vh)] object-contain transform-gpu msm:-translate-y-5 msm:translate-x-5 -rotate-[74deg] sm:-rotate-45 scale-[2] sm:scale-125 lg:transform-none"
+            width="8192" height="2786"
+            src="./images/hero-cta.jpg"
+            alt="Hero image"
+          >
+        </picture>
       </div>
-    </section>
+    </div>
+
+    <div class="flex justify-between items-end">
+      <div class="grid place-items-center gap-3">
+        <div class="block lg:hidden">
+          <svg class="block w-30 h-15">
+            <use xlink:href="./images/sprites/sprite.svg#logo"></use>
+          </svg>
+        </div>
+        <ul class="flex space-x-3">
+          <li>
+            <a href="#" target="_blank" rel="noreferrer"
+               class="block p-2 md:p-3 border-2 border-current rounded-[20px] text-white hover:text-opacity-80">
+              <svg class="icon md:w-6 md:h-6 xl:w-8 xl:h-8">
+                <use xlink:href="./images/sprites/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noreferrer"
+               class="block p-2 md:p-3 border-2 border-current rounded-[20px] text-white hover:text-opacity-80">
+              <svg class="icon md:w-6 md:h-6 xl:w-8 xl:h-8">
+                <use xlink:href="./images/sprites/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noreferrer"
+               class="block p-2 md:p-3 border-2 border-current rounded-[20px] text-white hover:text-opacity-80">
+              <svg class="icon md:w-6 md:h-6 xl:w-8 xl:h-8">
+                <use xlink:href="./images/sprites/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="max-w-[275px] xxl:max-w-[320px] ml-4 text-right">
+        <p class="text-[22px] md:text-2xl xxl:text-3xl xxl:text-4xl xxl:leading-[48px]">КОНТАКТНЫЙ МУЗЕЙ&nbsp;ОРУЖИЯ НА&nbsp;НИКОЛЬСКОЙ</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1">
+
     <section id="about" class="about">
       <div class="aboutContainer container p-0-25">
         <h1 class="aboutHeading">О МУЗЕЕ</h1>
@@ -415,7 +469,8 @@
               href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
               style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
               href="https://yandex.ru/maps/213/moscow/house/nikolskaya_ulitsa_11_13s1/Z04YcAVhTkAHQFtvfXt0d3RnZg==/?ll=37.621750%2C55.756842&utm_medium=mapframe&utm_source=maps&z=16.31"
-              style="color:#eee;font-size:12px;position:absolute;top:14px;">Никольская улица, 11-13с1 — Яндекс Карты⁤</a>
+              style="color:#eee;font-size:12px;position:absolute;top:14px;">Никольская улица, 11-13с1 —
+              Яндекс Карты⁤</a>
               <iframe
                 src="https://yandex.ru/map-widget/v1/?ll=37.621750%2C55.756842&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcxNzc1NhJF0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCd0LjQutC-0LvRjNGB0LrQsNGPINGD0LvQuNGG0LAsIDExLTEz0YExIgoNq3wWQhUBB19C&z=16.31"
                 width="727" height="410" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
