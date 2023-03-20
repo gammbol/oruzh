@@ -34,7 +34,7 @@
           </button>
         </div>
         <nav
-          class="fixed lg:static top-0 inset-x-0 z-50 flex flex-col lg:block lg:md:mt-2 xl:mt-0.5 bg-white lg:bg-transparent shadow lg:shadow-none -translate-y-full lg:transform-none transition-transform transform-gpu duration-300 js-header-nav">
+          class="fixed lg:static top-0 inset-x-0 z-50 flex flex-col lg:block -mt-[348px] lg:mt-2 xl:mt-0.5 bg-white lg:bg-transparent shadow lg:shadow-none lg:transform-none transition-transform transform-gpu duration-300 js-header-nav">
           <ol class="grid lg:flex lg:justify-between divide-y divide-black border-t border-black">
             <li class="py-1 lg:py-0 text-xl lg:typo-text-lg lg:leading-8">
               <a class="block text-center text-black lg:text-white hover:text-opacity-80 transition-colors"
@@ -131,25 +131,29 @@
 
   <main class="flex-1 space-y-20 mt-20">
     <section id="about" class="relative space-y-20">
-      <div class="absolute -z-1 -top-[10%] right-0 translate-x-[15%]">
-        <img
-          class="w-full h-full max-h-screen object-cover"
-          width="2160"
-          height="1589"
-          src="./images/homepage/about-bg.webp"
-          alt="Bg picture"
-          loading="lazy"
-        >
+      <div class="absolute -z-1 top-20 md:-top-[10%] right-0 bottom-0 md:bottom-auto md:translate-x-[15%] opacity-70">
+        <picture>
+          <source type="image/webp" media="(max-width: 767.5px)" srcset="./images/homepage/about-bg-mobile.webp">
+          <source type="image/webp" media="(min-width: 768px)" srcset="./images/homepage/about-bg.webp">
+          <img
+            class="w-full h-full max-h-screen mmd:object-[15%] object-cover"
+            width="2160"
+            height="1589"
+            src="./images/homepage/about-bg.webp"
+            alt="Bg picture"
+            loading="lazy"
+          >
+        </picture>
       </div>
 
       <div class="container">
-        <h2 class="h1">О МУЗЕЕ</h2>
-        <div class="mt-10">
-          <div>
-            <p class="typo-text-lg">ПН-ПТ: 12-00 - 21-00</p>
-            <p class="typo-text-lg">СБ-ВС: 11-00 - 20-00</p>
+        <h2 class="h1 text-right md:text-left">О МУЗЕЕ</h2>
+        <div class="md:mt-10">
+          <div class="text-right md:text-left">
+            <p class="xs:text-[min(calc(8.75px+1vw+1vh),22px)]">ПН-ПТ: 12-00 - 21-00</p>
+            <p class="xs:text-[min(calc(8.75px+1vw+1vh),22px)]">СБ-ВС: 11-00 - 20-00</p>
           </div>
-          <div class="typo-text max-w-[325px] space-y-5 mt-10">
+          <div class="typo-text max-w-[325px] space-y-5 mt-8 md:mt-10">
             <p>
               Контактный музей оружия находится в самом центре Москвы, в 200 м
               от Красной площади.
@@ -174,18 +178,19 @@
         </div>
       </div>
 
-      <div class="bg-[#FF2200] typo-text-lg uppercase font-semibold">
-        <ul class="container flex space-x-38 justify-end py-2">
+      <div
+        class="bg-primary mmd:backdrop-blur bg-opacity-60 md:bg-opacity-100 typo-text md:typo-text-lg uppercase md:font-semibold">
+        <ul class="container grid mmd:gap-2.5 md:flex md:space-x-38 md:justify-end py-2">
           <li>
-            <p>ПО БУДНЯМ:</p>
-            <ul>
+            <p class="font-semibold">ПО БУДНЯМ:</p>
+            <ul class="grid justify-end mmd:gap-2">
               <li>ПОЛНЫЙ БИЛЕТ - 800Р</li>
               <li>ЛЬГОТНЫЙ БИЛЕТ - 400Р</li>
             </ul>
           </li>
           <li>
-            <p>ПО ВЫХОДНЫМ:</p>
-            <ul>
+            <p class="font-semibold">ПО ВЫХОДНЫМ:</p>
+            <ul class="mmd:grid mmd:justify-end mmd:gap-2">
               <li>ПОЛНЫЙ БИЛЕТ - 1000Р</li>
               <li>ЛЬГОТНЫЙ БИЛЕТ - 500Р</li>
             </ul>
@@ -197,8 +202,8 @@
     <section id="exp">
       <div>
         <div class="container">
-          <h1 class="h1 text-right">ЭКСПОНАТЫ</h1>
-          <div class="typo-text max-w-[545px] space-y-5 mt-10">
+          <h1 class="h1 md:text-right">ЭКСПОНАТЫ</h1>
+          <div class="typo-text max-w-[545px] space-y-5 mt-8 md:mt-10">
             <p>В настоящий момент коллекция музея насчитывает около 50
               образцов огнестрельного оружия с 30-х годов прошлого века до
               сегодняшнего дня. В музее можно примерить военную форму, увидеть
@@ -209,9 +214,9 @@
               За обновлениями удобнее всего следить в соцсетях.
             </p>
           </div>
-          <div class="relative mt-15 js-slider opacity-0 transition-opacity duration-500">
+          <div class="relative mt-10 md:mt-15 js-slider opacity-0 transition-opacity duration-500">
             <div class="absolute top-1/2 left-0 z-1 -translate-y-1/2">
-              <button class="p-2 ml-2 text-white hover:text-opacity-80 transition-colors" type="button">
+              <button class="p-2 -ml-2 text-white hover:text-opacity-80 transition-colors" type="button">
                 <svg class="icon md:w-6 md:h-6 xl:w-8 xl:h-8 js-slider-prev">
                   <use xlink:href="./images/sprites/sprite.svg#arrow-left"></use>
                 </svg>
@@ -301,49 +306,51 @@
           </div>
         </div>
 
-        <ul class="mt-40 space-y-20 list-none">
+        <ul class="mt-15 md:mt-40 space-y-9 md:space-y-20 list-none">
           <li class="relative guns-section">
             <div class="container">
-              <h3 class="h2 guns-section__heading">СОВЕТСКОЕ ОРУЖИЕ</h3>
+              <h3 class="h2 guns-section__heading mmd:guns-section__heading--revert">
+                <span>СОВЕТСКОЕ ОРУЖИЕ</span>
+              </h3>
               <div class="guns-section__content">
                 <ul class="guns-section__list">
-                  <li class="">AK</li>
-                  <li class="">АКМ</li>
-                  <li class="">Карабин Мосина</li>
-                  <li class="">СВТ-40</li>
-                  <li class="">АВТ-40</li>
-                  <li class="">СКС</li>
-                  <li class="">Наган</li>
-                  <li class="">ТТ-33</li>
-                  <li class="">ПМ</li>
-                  <li class="">ППШ</li>
-                  <li class="">ППС</li>
+                  <li>AK</li>
+                  <li>АКМ</li>
+                  <li>СВТ-40</li>
+                  <li>АВТ-40</li>
+                  <li>СКС</li>
+                  <li>Наган</li>
+                  <li>ТТ-33</li>
+                  <li>ПМ</li>
+                  <li>ППШ</li>
+                  <li>ППС</li>
+                  <li>ДП-27</li>
                 </ul>
                 <ul class="guns-section__list">
-                  <li class="">ДП-27</li>
-                  <li class="">ДП-29</li>
-                  <li class="">РПД</li>
-                  <li class="">РПК</li>
-                  <li class="">РГ-42</li>
-                  <li class="">РГД-33</li>
-                  <li class="">Ф-1</li>
-                  <li class="">РГД-5</li>
-                  <li class="">РГН</li>
-                  <li class="">РГО</li>
-                  <li class="">РПГ-7Д</li>
+                  <li>ДП-29</li>
+                  <li>РПД</li>
+                  <li>РПК</li>
+                  <li>РГ-42</li>
+                  <li>РГД-33</li>
+                  <li>Ф-1</li>
+                  <li>РГД-5</li>
+                  <li>РГН</li>
+                  <li>РГО</li>
+                  <li>РПГ-7Д</li>
                 </ul>
-                <ul class="guns-section__list self-end">
-                  <li class="">РПГ-18 "Муха"</li>
-                  <li class="">РПГ-22 "Нетто"</li>
-                  <li class="">РПГ-26и "Аглень"</li>
-                  <li class="">ПТРК "Конкурс"</li>
-                  <li class="">ПТРК "Фагот"</li>
-                  <li class="">РПО "Шмель"</li>
+                <ul class="guns-section__list">
+                  <li>Карабин Мосина</li>
+                  <li>РПГ-18 "Муха"</li>
+                  <li>РПГ-22 "Нетто"</li>
+                  <li>РПГ-26и "Аглень"</li>
+                  <li>ПТРК "Конкурс"</li>
+                  <li>ПТРК "Фагот"</li>
+                  <li>РПО "Шмель"</li>
                 </ul>
               </div>
             </div>
 
-            <div class="absolute top-30 right-0 -bottom-20 -z-1 opacity-50 translate-x-[20%]">
+            <div class="absolute top-0 md:top-30 right-0 bottom-0 md:-bottom-20 -z-1 opacity-50 translate-x-[20%]">
               <img
                 class="w-full h-full object-contain"
                 width="1634"
@@ -355,25 +362,28 @@
             </div>
           </li>
           <li class="relative guns-section">
-            <div class="container">
-              <h3 class="h2 ml-auto guns-section__heading guns-section__heading--revert">РОССИЙСКОЕ ОРУЖИЕ</h3>
-              <div class="guns-section__content ml-auto">
-                <ul class="guns-section__list">
-                  <li class="">АК-74М</li>
-                  <li class="">АК-12</li>
-                  <li class="">АК-103</li>
-                  <li class="">ВСС "Винторез"</li>
-                  <li class="">Пистолет Ярыгина</li>
-                  <li class="">ПП-91 "Кедр"</li>
-                  <li class="">ПП-19 "Витязь"</li>
-                  <li class="">ПП-93 "Тень"</li>
-                  <li class="">РПК-74м</li>
-                  <li class="">АГС-17 "Пламя"</li>
+            <div class="container mmd:pb-72">
+              <h3 class="h2 ml-auto guns-section__heading guns-section__heading--revert">
+                <span>РОССИЙСКОЕ ОРУЖИЕ</span>
+              </h3>
+              <div class="guns-section__content md:ml-auto">
+                <ul class="mmd:columns-2 mmd:gap-12 mmd:space-y-2 md:guns-section__list">
+                  <li>АК-74М</li>
+                  <li>АК-12</li>
+                  <li>АК-103</li>
+                  <li>ВСС "Винторез"</li>
+                  <li>Пистолет Ярыгина</li>
+                  <li>ПП-91 "Кедр"</li>
+                  <li>ПП-19 "Витязь"</li>
+                  <li>ПП-93 "Тень"</li>
+                  <li>РПК-74м</li>
+                  <li>АГС-17 "Пламя"</li>
                 </ul>
               </div>
             </div>
 
-            <div class="absolute top-30 left-0 -bottom-20 -z-1 opacity-50 -translate-x-[20%]">
+            <div
+              class="absolute md:top-30 left-0 bottom-0 md:-bottom-20 -z-1 opacity-70 md:opacity-50 -translate-x-[20%]">
               <img
                 class="w-full h-full object-contain"
                 width="1394"
@@ -385,30 +395,33 @@
             </div>
           </li>
           <li class="relative guns-section">
-            <div class="container pb-72">
-              <h3 class="h2 guns-section__heading">ЗАРУБЕЖНОЕ ОРУЖИЕ</h3>
-              <div class="guns-section__content">
+            <div class="container pb-35 md:pb-72">
+              <h3 class="h2 guns-section__heading mmd:guns-section__heading--revert">
+                <span>ЗАРУБЕЖНОЕ ОРУЖИЕ</span>
+              </h3>
+              <div class="guns-section__content mmd:space-x-12">
                 <ul class="guns-section__list">
-                  <li class="">VZ-58</li>
-                  <li class="">Mauser 98K</li>
-                  <li class="">Glock 17</li>
-                  <li class="">Walther PPK</li>
-                  <li class="">Desert Eagle</li>
-                  <li class="">PM-63 RAK</li>
+                  <li>VZ-58</li>
+                  <li>Mauser 98K</li>
+                  <li>Glock 17</li>
+                  <li>Walther PPK</li>
+                  <li>Desert Eagle</li>
+                  <li>PM-63 RAK</li>
+                  <li>SA-25</li>
                 </ul>
                 <ul class="guns-section__list">
-                  <li class="">M-56 Zastava</li>
-                  <li class="">Thompson M1</li>
-                  <li class="">MP-40</li>
-                  <li class="">MG-34</li>
-                  <li class="">M-24</li>
-                  <li class="">UZI</li>
+                  <li>M-56 Zastava</li>
+                  <li>Thompson M1</li>
+                  <li>MP-40</li>
+                  <li>MG-34</li>
+                  <li>M-24</li>
+                  <li>UZI</li>
                 </ul>
               </div>
             </div>
-            <div class="absolute right-0 bottom-0 -z-1 opacity-50 translate-x-[20%]">
+            <div class="absolute mmd:left-[15%] right-0 bottom-0 -z-1 opacity-50 md:translate-x-[20%]">
               <img
-                class="w-full h-full object-contain"
+                class="w-full h-full object-cover md:object-contain mmd:min-h-[185px] mmd:object-left"
                 width="3470"
                 height="1064"
                 src="./images/homepage/guns-3.webp"
@@ -433,7 +446,7 @@
               loading="lazy"
             >
           </div>
-          <h2 class="h1">ДЛЯ ГРУПП</h2>
+          <h2 class="h1 text-right md:text-left">ДЛЯ ГРУПП</h2>
 
           <div class="ml-auto typo-text max-w-[445px] space-y-5 mt-5">
             <p>
@@ -468,48 +481,55 @@
               <tr>
                 <td>Стандартная экскурсия <br> (взрослая или детская)</td>
                 <td>Не более 10 человек; <br> продолжительность до 1 часа</td>
-                <td><span class="text-2xl">10 000 р.</span></td>
+                <td><span class="text-lg md:text-2xl">10 000 р.</span></td>
               </tr>
               <tr>
-                <td>Стандартная экскурсия <br> в утренние часы (между 10:00 и 12:00)
+                <td>Стандартная экскурсия <br> в утренние часы <span class="mmd: block mmd:text-sm">(между 10:00 и 12:00)</span>
                 </td>
                 <td>Не более 10 человек; <br> продолжительность до 1 часа</td>
-                <td><span class="text-2xl">8 000 р.</span></td>
+                <td><span class="text-lg md:text-2xl">8 000 р.</span></td>
               </tr>
               <tr>
                 <td>
                   Квест для маленькой школьной группы
-                  <br> (по будням до 12:00, либо по выходным до 11:00)
+                  <br> <span class="mmd: block mmd:text-sm">(по будням до 12:00, либо по выходным до 11:00)</span>
                 </td>
                 <td>
                   Не более 15 человек, 9-17 лет, продолжительность до 1 часа,
                   один сопровождающий инструктор от музея
                 </td>
-                <td><span class="text-2xl">10 000 р.</span></td>
+                <td><span class="text-lg md:text-2xl">10 000 р.</span></td>
               </tr>
               <tr>
                 <td>
                   Квест для большой школьной группы
-                  <br> (по будням до 12:00, либо по выходным до 11:00)
+                  <br> <span class="mmd: block mmd:text-sm">(по будням до 12:00, либо по выходным до 11:00)</span>
                 </td>
                 <td>
                   Не более 25 человек, 9-17 лет, продолжительность
                   до 1 часа, два сопровождающих инструктора
                 </td>
-                <td><span class="text-2xl">15 000 р.</span></td>
+                <td><span class="text-lg md:text-2xl">15 000 р.</span></td>
               </tr>
               <tr>
                 <td>
                   Посещение музея для школьных групп с утренней скидкой,
-                  без экскурсии (в любой день до 12:00)
+                  без экскурсии <span class="mmd: block mmd:text-sm">(в любой день до 12:00)</span>
                 </td>
                 <td>
                   Не более 25 человек в группе, плюс 2-4 учителей/родителей
                   с группой, продолжительность до 1 часа
                 </td>
                 <td>
-                  До 15 человек включительно — <span class="text-2xl">5000 р.</span> за группу;
+                  <span class="md:hidden">
+                    <span class="text-lg">5 000 р.</span>
+                    <br>
+                    до 15 человек; далее +300 р. за человека
+                  </span>
+                  <span class="hidden md:inline-block">
+                    До 15 человек включительно — <span class="text-lg md:text-2xl">5000 р.</span> за группу;
                   далее +300 рублей с каждого человека
+                  </span>
                 </td>
               </tr>
               </tbody>
@@ -520,11 +540,10 @@
 
       <div class="container">
         <h3 class="text-4xl uppercase text-center">ЗАКАЗ ЭКСКУРСИИ</h3>
-        <form class="flex gap-10 mt-8 typo-text">
+        <form class="grid mmd:max-w-[445px] mmd:mx-auto w-full lg:flex gap-10 mt-8 typo-text">
           <div class="basis-[210px] grow">
             <label class="field">
               <input
-                class=""
                 type="text"
                 placeholder="Имя"
                 name="name"
@@ -535,7 +554,6 @@
           <div class="basis-[400px] grow">
             <label class="field">
               <input
-                class=""
                 type="text"
                 placeholder="Тип мероприятия"
                 name="event"
@@ -546,7 +564,6 @@
           <div class="basis-[210px] grow">
             <label class="field">
               <input
-                class=""
                 type="tel"
                 placeholder="Номер телефона"
                 name="phone"
@@ -555,9 +572,9 @@
               >
             </label>
           </div>
-          <div class="basis-[220px]">
+          <div class="basis-[220px] max-w-[220px] w-full mx-auto">
             <button
-              class="btn-red"
+              class="btn-red w-full"
               type="submit">
               ОТПРАВИТЬ
             </button>
@@ -566,10 +583,10 @@
       </div>
     </section>
 
-    <section class="relative pb-72" id="certificates">
+    <section class="relative pb-35 md:pb-72" id="certificates">
       <div class="container">
         <h1 class="h1 text-right">СЕРТИФИКАТЫ</h1>
-        <div class="typo-text max-w-[445px] mx-auto space-y-8 mt-25">
+        <div class="typo-text max-w-[445px] mx-auto space-y-8 mt-10 md:mt-25">
           <p>
             Для приобретения подарочного сертификата заполните
             форму - мы свяжемся с Вами в ближайшее время,
@@ -595,18 +612,18 @@
           </form>
         </div>
       </div>
-      <div class="absolute top-0 left-0 -z-1 opacity-70 -translate-x-[15%]">
+      <div aria-hidden="true" class="absolute top-0 left-0 -z-1 opacity-70 -translate-x-[15%]">
         <img
-          class="w-full h-full max-w-[420px]"
+          class="w-full h-full max-w-[275px] md:max-w-[420px]"
           width="1656" height="1888"
           src="./images/homepage/certs-left.webp"
           alt="Item image"
           loading="lazy"
         >
       </div>
-      <div class="absolute bottom-0 right-0 -z-1 opacity-70 translate-x-[25%] translate-y-[10%]">
+      <div aria-hidden="true" class="absolute bottom-0 right-0 -z-1 opacity-70 translate-x-[25%] translate-y-[10%]">
         <img
-          class="w-full h-full max-w-[600px]"
+          class="w-full h-full max-w-[375px] md:max-w-[600px]"
           width="1376" height="1404"
           src="./images/homepage/certs-right.webp"
           alt="Item image"
@@ -615,12 +632,12 @@
       </div>
     </section>
 
-    <section class="" id="contacts">
+    <section class="md:pb-20" id="contacts">
       <div class="container">
         <h2 class="h1">КОНТАКТЫ</h2>
-        <div class="mt-15 flex space-x-30">
-          <div class="basis-[400px] space-y-8">
-            <div class="typo-text space-y-8">
+        <div class="mt-8 md:mt-15 grid mmd:gap-10 md:flex md:space-x-30">
+          <div class="basis-[400px] space-y-5 md:space-y-8">
+            <div class="typo-text space-y-5 md:space-y-8">
               <p>
                 Никольская 11-13 стр.1,
                 вход со двора
@@ -642,7 +659,7 @@
                 ответить на Ваши вопросы.
               </p>
             </div>
-            <div class="">
+            <div>
               <ul class="flex space-x-3">
                 <li>
                   <a href="#" target="_blank" rel="noreferrer"
@@ -672,7 +689,7 @@
             </div>
           </div>
           <div class="basis-[400px] grow">
-<!--            <div style="position:relative;overflow:hidden;filter: invert(1) hue-rotate(-190deg);"><a-->
+            <!--                        <div style="position:relative;overflow:hidden;filter: invert(1) hue-rotate(-190deg);"><a-->
             <div style="position:relative;overflow:hidden;"><a
               href="https://yandex.ru/maps/org/kontaktny_muzey_oruzheyny_podval/205682910633/?utm_medium=mapframe&utm_source=maps"
               style="color:#eee;font-size:12px;position:absolute;top:0px;">Контактный музей Оружейный подвал</a><a
@@ -681,19 +698,25 @@
               href="https://yandex.ru/maps/213/moscow/category/excursions/184106434/?utm_medium=mapframe&utm_source=maps"
               style="color:#eee;font-size:12px;position:absolute;top:28px;">Экскурсии в Москве</a>
               <iframe
+                loading="lazy"
                 class="w-full"
                 src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=37.621750%2C55.756842&mode=search&oid=205682910633&ol=biz&z=16.96"
                 width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
             </div>
-            <!--            <div style="position:relative;overflow:hidden;">-->
-            <!--              <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a>-->
-            <!--              <a href="https://yandex.ru/maps/213/moscow/house/nikolskaya_ulitsa_11_13s1/Z04YcAVhTkAHQFtvfXt0d3RnZg==/?ll=37.621750%2C55.756842&utm_medium=mapframe&utm_source=maps&z=16.31" style="color:#eee;font-size:12px;position:absolute;top:14px;">Никольская улица, 11-13с1 — Яндекс Карты⁤</a>-->
-            <!--              <iframe class="w-full" src="https://yandex.ru/map-widget/v1/?ll=37.621750%2C55.756842&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcxNzc1NhJF0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCd0LjQutC-0LvRjNGB0LrQsNGPINGD0LvQuNGG0LAsIDExLTEz0YExIgoNq3wWQhUBB19C&z=16.31" width="727" height="410" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>-->
-            <!--            </div>-->
           </div>
         </div>
       </div>
     </section>
+
+    <div class="pb-20">
+      <img
+        class="min-h-[400px] md:w-full md:h-full object-cover object-[45%]"
+        width="5184" height="2592"
+        src="./images/homepage/footer-bg.webp"
+        alt="Item image"
+        loading="lazy"
+      >
+    </div>
   </main>
 </div>
 

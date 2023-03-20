@@ -2,7 +2,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html", "./styles/**/*.css"],
+  content: ["index.html", "./styles/**/*.css", './scripts/**/*.mjs'],
   theme: {
     screens: {
       xxs: "335px",
@@ -23,6 +23,9 @@ module.exports = {
       fontFamily: {
         jost: ["Jost", ...defaultTheme.fontFamily.sans],
         molot: ["Molot", ...defaultTheme.fontFamily.sans],
+      },
+      colors: {
+        primary: '#FF2200'
       },
       spacing: {
         2.5: "0.625rem",

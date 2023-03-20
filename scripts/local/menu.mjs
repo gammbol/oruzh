@@ -5,9 +5,9 @@ export const MobileMenu = () => {
   const $links = $menuContainer.querySelectorAll('a')
 
   const onToggle = () => {
-    $menuContainer.classList.contains('-translate-y-full')
-      ? $menuContainer.classList.remove('-translate-y-full')
-      : $menuContainer.classList.add('-translate-y-full')
+    $menuContainer.classList.contains('translate-y-full')
+      ? $menuContainer.classList.remove('translate-y-full')
+      : $menuContainer.classList.add('translate-y-full')
   }
 
   $openBtn.addEventListener('click', onToggle)
