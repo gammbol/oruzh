@@ -1,16 +1,23 @@
 export const Slider = () => {
-  const btnNext = document.querySelector('.btn-next')
-  const btnPrev = document.querySelector('.btn-prev')
+  const $sliderWrapper = document.querySelector('.js-slider')
+  const $instance = $sliderWrapper.querySelector('.js-slider-instance')
+  const $prev = $sliderWrapper.querySelector('.js-slider-prev')
+  const $next = $sliderWrapper.querySelector('.js-slider-next')
 
-  const slider = new KeenSlider('#my-keen-slider', {
+  const slider = new KeenSlider($instance, {
     centered: true,
+    loop: true,
+    slides: {
+      spacing: 200,
+    },
+    defaultAnimation: {
+      duration: 1000
+    },
+    created: () => {
+      $sliderWrapper.classList.remove('opacity-0')
+    }
   })
 
-  btnNext.addEventListener('click', () => {
-    slider.next()
-  })
-
-  btnPrev.addEventListener('click', () => {
-    slider.prev()
-  })
+  $prev.addEventListener('click', () => slider.prev())
+  $next.addEventListener('click', () => slider.next())
 }

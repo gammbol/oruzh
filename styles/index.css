@@ -14,6 +14,10 @@
   .container {
     @apply w-full max-w-[1190px] xl:max-w-[1360px] px-4 md:px-6 lg:px-10 mx-auto;
   }
+
+  input, textarea {
+    @apply w-full py-3 px-4 rounded-lg bg-white/80 placeholder:text-black/40 border border-white/80
+  }
 }
 
 @tailwind components;
@@ -21,9 +25,77 @@
   .icon {
     @apply w-4 h-4
   }
+
+  .h1 {
+    @apply text-[115px] leading-[135px]
+  }
+  .h2 {
+    @apply text-[80px] leading-[1.1]
+  }
+
+  .typo-text {
+    @apply text-base leading-[24px]
+  }
+  .typo-text-lg {
+    @apply text-[22px] leading-9
+  }
+
+  .guns-section__heading {
+    @apply relative pr-8 w-fit before:absolute before:right-0 before:top-[42%] before:-z-1 before:h-[78%] before:bg-[#FF2200] before:w-[10000px]
+  }
+
+  .guns-section__heading--revert {
+    @apply pr-0 pl-8 before:left-0 before:right-auto
+  }
+
+  .guns-section__content {
+    @apply mt-20 flex justify-between space-x-30 w-fit
+  }
+
+  .guns-section__list {
+    @apply space-y-5
+  }
+
+  .guns-section__list li {
+    @apply py-0.5 px-1.5 bg-white rounded text-black w-fit text-2xl
+  }
+
+  /*.zoom-out {*/
+  /*  @apply h-[min(500px,50vw)];*/
+  /*  perspective: 100px;*/
+  /*}*/
+
+  /*.zoom-out__slide div {*/
+  /*  @apply overflow-hidden absolute w-full h-full will-change-transform;*/
+  /*}*/
+
+  .groups-table {
+
+  }
+  .groups-table thead {
+    @apply relative before:absolute before:inset-0 before:-z-1 before:bg-white/20 before:backdrop-blur
+  }
+  .groups-table tbody td {
+    @apply text-base leading-6
+  }
+  .groups-table tbody td {
+    @apply py-3 px-4 text-center border border-white
+  }
+  .groups-table thead th {
+    @apply py-2.5 px-4 text-[21px] leading-6 font-medium text-center border border-white
+  }
+
+  .field {
+    @apply flex rounded-lg bg-black
+  }
+
+  .btn-red {
+    @apply inline-block w-full py-3 px-4 rounded-lg border border-[#FF2200] bg-[#FF2200] hover:bg-red-700 hover:border-red-700 transition-colors font-semibold
+  }
 }
 
 @tailwind utilities;
+
 
 
 @media screen and (max-width: 768px) {
