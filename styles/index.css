@@ -5,7 +5,6 @@
 @layer base {
   html {
     @apply font-jost;
-    scroll-behavior: smooth;
   }
 
   body {
@@ -21,7 +20,7 @@
   }
 
   input, textarea {
-    @apply w-full py-3 px-4 rounded-lg bg-white/80 placeholder:text-black/40 border border-white/80
+    @apply w-full py-3 px-4 text-black rounded-lg bg-white/80 placeholder:text-black/40 border border-white/80 outline-none focus:outline-0 focus-visible:ring-2 focus-visible:ring-primary
   }
 }
 
@@ -83,10 +82,10 @@
   /*}*/
 
   .groups-table {
-    @apply flex md:table
+    @apply flex md:table relative
   }
-  .groups-table thead {
-    @apply relative mmd:hidden before:absolute before:inset-0 before:-z-1 before:bg-white/20 before:backdrop-blur
+  .groups-table thead th {
+    @apply relative mmd:hidden before:absolute before:inset-0 before:-z-1 before:h-full before:bg-white/20 before:backdrop-blur
   }
   .groups-table tbody td {
     @apply text-base leading-6
