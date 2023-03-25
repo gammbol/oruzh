@@ -40,4 +40,7 @@
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 33" id="arrow-left">
         <path d="M16 33V0L0 17L16 33Z" fill="currentColor"/>
     </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 33" id="arrow-right">
+        <path d="M5.74597e-06 -1.39876e-06L2.86102e-06 33L16 17L5.74597e-06 -1.39876e-06Z" fill="currentColor"/>
+    </symbol>
 </svg>

@@ -61,7 +61,7 @@
   }
 
   .guns-section__content {
-    @apply mmd:px-5 mt-9 md:mt-20 flex justify-between items-end space-x-7 md:space-x-30 w-fit
+    @apply px-5 md:px-25 mt-9 md:mt-20 flex items-end space-x-7 md:space-x-30
   }
 
   .guns-section__list {

@@ -131,7 +131,8 @@
 
   <main class="flex-1 space-y-20 mt-20">
     <section id="about" class="relative space-y-20">
-      <div class="absolute -z-1 top-20 md:-top-0 xl:-top-[10%] right-0 bottom-0 xl:bottom-auto md:max-w-[80%] md:translate-x-[15%] opacity-70">
+      <div
+        class="absolute -z-1 top-20 md:-top-0 xl:-top-[10%] right-0 bottom-0 xl:bottom-auto md:max-w-[80%] md:translate-x-[15%] opacity-70">
         <picture>
           <source type="image/webp" media="(max-width: 1279px)" srcset="./images/homepage/about-bg-mobile.webp">
           <source type="image/webp" media="(min-width: 1280px)" srcset="./images/homepage/about-bg.webp">
@@ -298,8 +299,8 @@
 
             <div class="absolute top-1/2 right-0 z-1 -translate-y-1/2">
               <button class="p-2 -mr-2 text-white hover:text-opacity-80 transition-colors" type="button">
-                <svg class="icon md:w-6 md:h-6 xl:w-8 xl:h-8 rotate-180 js-slider-next">
-                  <use xlink:href="./images/sprites/sprite.svg#arrow-left"></use>
+                <svg class="icon md:w-6 md:h-6 xl:w-8 xl:h-8 js-slider-next">
+                  <use xlink:href="./images/sprites/sprite.svg#arrow-right"></use>
                 </svg>
               </button>
             </div>
@@ -307,8 +308,8 @@
         </div>
 
         <ul class="mt-15 md:mt-40 space-y-9 md:space-y-20 list-none">
-          <li class="relative guns-section">
-            <div class="container">
+          <li class="guns-section">
+            <div class="relative container">
               <h3 class="h2 guns-section__heading mmd:guns-section__heading--revert">
                 <span>СОВЕТСКОЕ ОРУЖИЕ</span>
               </h3>
@@ -348,25 +349,27 @@
                   <li>РПО "Шмель"</li>
                 </ul>
               </div>
-            </div>
 
-            <div class="absolute top-0 md:top-40 right-0 bottom-0 md:-bottom-20 -z-1 opacity-70 md:opacity-80 translate-x-[25%]">
-              <img
-                class="w-full h-full object-contain"
-                width="1634"
-                height="1088"
-                src="./images/homepage/guns-1.webp"
-                alt="Gun 1"
-                loading="lazy"
-              >
+              <div
+                aria-hidden="true"
+                class="absolute top-0 md:top-40 right-0 bottom-0 md:-bottom-20 left-[30%] -z-1 opacity-70 md:opacity-80 translate-x-[25%]">
+                <img
+                  class="w-full h-full object-contain"
+                  width="1634"
+                  height="1088"
+                  src="./images/homepage/guns-1.webp"
+                  alt="Gun 1"
+                  loading="lazy"
+                >
+              </div>
             </div>
           </li>
-          <li class="relative guns-section">
-            <div class="container mmd:pb-72">
+          <li class="guns-section">
+            <div class="relative container mmd:pb-72">
               <h3 class="h2 ml-auto guns-section__heading guns-section__heading--revert">
                 <span>РОССИЙСКОЕ ОРУЖИЕ</span>
               </h3>
-              <div class="guns-section__content md:ml-auto">
+              <div class="guns-section__content md:justify-end">
                 <ul class="mmd:columns-2 mmd:gap-12 mmd:space-y-2 md:guns-section__list">
                   <li>АК-74М</li>
                   <li>АК-12</li>
@@ -380,22 +383,22 @@
                   <li>АГС-17 "Пламя"</li>
                 </ul>
               </div>
-            </div>
 
-            <div
-              class="absolute md:top-30 left-0 bottom-0 md:-bottom-20 -z-1 opacity-70 md:opacity-80 -translate-x-[20%]">
-              <img
-                class="w-full h-full object-contain"
-                width="1394"
-                height="984"
-                src="./images/homepage/guns-2.webp"
-                alt="Gun 1"
-                loading="lazy"
-              >
+              <div
+                class="absolute md:top-40 left-0 bottom-0 -z-1 opacity-70 md:opacity-80 -translate-x-[40%]">
+                <img
+                  class="w-full h-full object-contain"
+                  width="1394"
+                  height="984"
+                  src="./images/homepage/guns-2.webp"
+                  alt="Gun 1"
+                  loading="lazy"
+                >
+              </div>
             </div>
           </li>
-          <li class="relative guns-section">
-            <div class="container pb-35 md:pb-72">
+          <li class="guns-section">
+            <div class="relative container pb-35 md:pb-72">
               <h3 class="h2 guns-section__heading mmd:guns-section__heading--revert">
                 <span>ЗАРУБЕЖНОЕ ОРУЖИЕ</span>
               </h3>
@@ -418,16 +421,17 @@
                   <li>UZI</li>
                 </ul>
               </div>
-            </div>
-            <div class="absolute mmd:left-[15%] right-0 bottom-0 -z-1 opacity-70 md:opacity-80 md:translate-x-[20%]">
-              <img
-                class="w-full h-full object-cover md:object-contain mmd:min-h-[185px] mmd:object-left"
-                width="3470"
-                height="1064"
-                src="./images/homepage/guns-3.webp"
-                alt="Gun 1"
-                loading="lazy"
-              >
+
+              <div class="absolute mmd:left-[15%] right-0 bottom-0 -z-1 opacity-70 md:opacity-80 md:translate-x-[40%]">
+                <img
+                  class="w-full h-full object-cover md:object-contain mmd:min-h-[185px] mmd:object-left"
+                  width="3470"
+                  height="1064"
+                  src="./images/homepage/guns-3.webp"
+                  alt="Gun 1"
+                  loading="lazy"
+                >
+              </div>
             </div>
           </li>
         </ul>
@@ -626,7 +630,8 @@
           loading="lazy"
         >
       </div>
-      <div aria-hidden="true" class="absolute bottom-0 right-0 -z-1 opacity-80 translate-x-[25%] md:translate-x-[15%] xl:translate-x-[20%] translate-y-[10%]">
+      <div aria-hidden="true"
+           class="absolute bottom-0 right-0 -z-1 opacity-80 translate-x-[25%] md:translate-x-[15%] xl:translate-x-[20%] translate-y-[10%]">
         <img
           class="w-full h-full max-w-[375px] md:max-w-[600px]"
           width="1376" height="1404"
@@ -656,7 +661,8 @@
                 <a class="text-white hover:text-opacity-80 transition-colors" href="mailto:guns@guns.moscow">guns@guns.moscow</a>
               </p>
               <p>
-                <a class="text-white hover:text-opacity-80 transition-colors" href="tel:+79017063372">+7 (901) 706 33 72</a>
+                <a class="text-white hover:text-opacity-80 transition-colors" href="tel:+79017063372">+7 (901) 706 33
+                  72</a>
               </p>
               <p>
                 Наиболее оперативный способ связи -
