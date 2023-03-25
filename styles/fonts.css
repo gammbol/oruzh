@@ -2,14 +2,14 @@
   font-family: "Molot";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/molot.woff2") format("woff2");
+  src: url("../fonts/molot-regular.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "Molot";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/molot.otf") format("otf");
+  src: url("../fonts/molot-regular.otf") format("otf");
   font-display: swap;
 }
 @font-face {
